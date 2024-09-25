@@ -1,0 +1,7 @@
+{
+  "editor.inlineSuggest.suppressSuggestions": false,
+  "editor.suggest.localityBonus": false,
+  "editor.suggest.preview": false,
+  "editor.suggest.shareSuggestSelections": false,
+  "files.simpleDialog.enable": false
+}
