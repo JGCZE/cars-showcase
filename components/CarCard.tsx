@@ -5,6 +5,7 @@ import { calculateCarRent } from "@/utils";
 import Image from "next/image";
 import CustomButton from "./CustomButton";
 import { useState } from "react";
+import CarDetails from "./CarDetails";
 
 interface IProps {
   car: ICarProps;
@@ -14,7 +15,6 @@ const CarCard = ({ car }: IProps) => {
   const { city_mpg, year, make, model, transmission, drive } = car;
 
   const [isOpen, setIsOpen] = useState(false);
-
   const carRent = calculateCarRent(city_mpg, year);
 
   return (
@@ -74,6 +74,12 @@ const CarCard = ({ car }: IProps) => {
           />
         </div>
       </div>
+
+      <CarDetails
+        isOpen={isOpen}
+        closeModal={() => setIsOpen(false)}
+        car={car}
+      />
     </div>
   );
 };
