@@ -58,3 +58,8 @@ interface FilteringOptions {
   title: string;
   value: string;
 }
+
+export interface IShowMoreProps {
+  pageNumber: number;
+  isNext: boolean;
+}
