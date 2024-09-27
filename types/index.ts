@@ -48,3 +48,13 @@ type Links = {
   title: string;
   url: string;
 };
+
+export interface ICustomFilterProps {
+  title: string;
+  options: Array<FilteringOptions>;
+}
+
+interface FilteringOptions {
+  title: string;
+  value: string;
+}
