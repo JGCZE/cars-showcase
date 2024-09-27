@@ -3,8 +3,6 @@ import { fetchCars } from "@/utils";
 
 export default async function Home() {
   const allCars = await fetchCars();
-
-  //const allCars = ["ss"];
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
 
   return (
