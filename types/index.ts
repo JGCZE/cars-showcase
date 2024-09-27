@@ -16,6 +16,14 @@ export interface ISearchManufacturerProps {
   setManufacturer: (manufacturer: string) => void;
 }
 
+export interface IFilterProps {
+  manufacturer: string;
+  year: number;
+  fuel: string;
+  limit: number;
+  model: string;
+}
+
 export interface ICarProps {
   city_mpg: number;
   class: string;
